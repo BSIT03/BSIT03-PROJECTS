@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTOMATED CATFISH FEEDER SYSTEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav button {
+            background: none;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #666;
+        }
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+        .active {
+            display: block;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 60%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card p {
+            padding: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ddd;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AUTOMATED CATFISH FEEDER SYSTEM</h1>
+</header>
+
+<nav>
+    <button onclick="showTab('home')">Components</button>
+    <button onclick="showTab('about')">About</button>
+</nav>
+
+<!-- Home / Gallery Section -->
+<div id="home" class="tab-content active">
+    <div class="gallery">
+        <div class="card">
+            <img src="image1.webp" alt="Component 1">
+            <p>A microcontroller board based on ATmega328P(datasheet).</p>
+        </div>
+        <div class="card">
+            <img src="image2.png"Component 2">
+            <p>A device that measure distances using sound waves, specifically ultrasonic waves that are beyond the range of human hearing.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Component 3">
+            <p>A relay module allows an Arduino to control higher voltage and current circuits, which it cannot do directly.</p>
+        </div>
+        <div class="card">
+            <img src="image4.jpg" alt="Component 4">
+            <p>A small, precision-controlled motor, often used in robotics, electronics, and automation, that can rotate to a specific angle or position.</p>
+        </div>
+        <div class="card">
+            <img src="image5.jpg" alt="Component 5">
+            <p>Jumper wires are simply wires that have connector pins at each end, allowing them to be used to connect two points to each other without soldering</p>
+        </div>
+        <div class="card">
+            <img src="image6.jpg" alt="Component 6">
+            <p>a switch or button (on an electrical appliance, etc) which has an 'on' position and an 'off' position.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="tab-content">
+    <h2>About the Automated Catfish Feeder System</h2>
+    <p>
+        The Automated Catfish Feeder System is designed to efficiently and accurately dispense fish feed at scheduled intervals. 
+        It uses components like ultrasonic sensors, Arduino microcontrollers, servo motors, and relay modules to create a reliable 
+        and energy-efficient feeding mechanism. This system helps reduce labor, ensures consistent feeding schedules, and improves 
+        the health and growth of catfish by preventing overfeeding or underfeeding.
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2025 My Website</p>
+</footer>
+
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
