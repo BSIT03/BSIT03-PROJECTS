@@ -1,1 +1,1 @@
-# BSIT03-PROJECTS
+# QR CODE-BASED Campus Event Management System
